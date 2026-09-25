@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CALCULADORA"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#FF0000"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <EditText
+                android:id="@+id/etOperando1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:hint="Operando 1"
+                android:layout_margin="20dp"/>
+            <EditText
+                android:id="@+id/etOperando2"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:hint="Operando 2"
+                android:layout_margin="20dp"/>
+            <TextView
+                android:id="@+id/tvResultado"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:hint="Resultado"
+                android:layout_margin="20dp"
+                android:textSize="25dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnSumar"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:onClick="sumar"
+                android:layout_margin="2dp"/>
+            <Button
+                android:id="@+id/btnRestar"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:onClick="restar"
+                android:layout_margin="2dp"/>
+            <Button
+                android:id="@+id/btnMultiplicar"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="x"
+                android:onClick="multiplicar"
+                android:layout_margin="2dp"/>
+            <Button
+                android:id="@+id/btnDividir"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="/"
+                android:onClick="dividir"
+                android:layout_margin="2dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+
